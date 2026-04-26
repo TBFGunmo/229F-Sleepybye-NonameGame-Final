@@ -30,16 +30,21 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (jumpAction.WasPressedThisFrame() && onFloor)
+        
+        if (jumpAction.WasPressedThisFrame() && onFloor && !GameManager.gameOver)
         {
             rb.AddForce(jumpForce * Vector2.up, ForceMode2D.Impulse);
         }
+        
     }
 
     private void FixedUpdate()
     {
-        float holizontalInput = moveAction.ReadValue<Vector2>().x;
-        transform.Translate(Vector2.right * speed * holizontalInput * Time.deltaTime);
+        if (!GameManager.gameOver)
+        {
+            float holizontalInput = moveAction.ReadValue<Vector2>().x;
+            transform.Translate(Vector2.right * speed * holizontalInput * Time.deltaTime);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
