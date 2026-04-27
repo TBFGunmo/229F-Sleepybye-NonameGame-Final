@@ -6899,12 +6899,13 @@ MonoBehaviour:
   GameOverUI: {fileID: 2051130820}
   ScoreEnd: {fileID: 1350662692}
   CreditUI: {fileID: 2076088861}
-  StatusBar: {fileID: 0}
-  HP5: {fileID: 0}
-  HP4: {fileID: 0}
-  HP3: {fileID: 0}
-  HP2: {fileID: 0}
-  HP1: {fileID: 0}
+  StatusBar: {fileID: 621805327}
+  ScoreShow: {fileID: 10425321}
+  HP5: {fileID: 1505166345}
+  HP4: {fileID: 498243667}
+  HP3: {fileID: 71071685}
+  HP2: {fileID: 2043784103}
+  HP1: {fileID: 776983539}
 --- !u!4 &2075962895
 Transform:
   m_ObjectHideFlags: 0
