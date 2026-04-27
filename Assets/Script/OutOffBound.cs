@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class OutOffBound : MonoBehaviour
 {
-
+    public Transform sapwnPosition;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -19,7 +19,14 @@ public class OutOffBound : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Player"))
         {
-            GameManager.gameOver = true;
+            GameManager.playerHP -= 1;
+
+            if (GameManager.playerHP <= 0)
+            {
+                GameManager.gameOver = true;
+            }
+
+            collision.gameObject.transform.position = sapwnPosition.position;
         }
 
     }

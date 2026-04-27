@@ -18,7 +18,7 @@ public class Catch : MonoBehaviour
         if (collision.gameObject.CompareTag("Bomb"))
         {
             GameManager.playerHP -= 1;
-            print(GameManager.playerHP);
+            //print(GameManager.playerHP);
 
             if (GameManager.playerHP <= 0)
             {
