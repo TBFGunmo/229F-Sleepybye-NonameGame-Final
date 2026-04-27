@@ -25,6 +25,20 @@ public class GameManager : MonoBehaviour
 
     public GameObject CreditUI;
 
+    public GameObject StatusBar;
+    public TMP_Text ScoreShow;
+    public GameObject HP5;
+    public GameObject HP4;
+    public GameObject HP3;
+    public GameObject HP2;
+    public GameObject HP1;
+
+
+
+
+
+
+
     private void Awake()
     {
         instance = this;
@@ -52,6 +66,33 @@ public class GameManager : MonoBehaviour
             PauseGame();
         }
 
+        if (playerHP <= 0 && HP1.activeSelf) 
+        {
+            HP1.SetActive(false);
+        }
+        else if (playerHP <= 1 && HP2.activeSelf)
+        {
+            HP2.SetActive(false);
+        }
+        else if (playerHP <= 2 && HP3.activeSelf)
+        {
+            HP3.SetActive(false);
+        }
+        else if (playerHP <= 3 && HP4.activeSelf)
+        {
+            HP4.SetActive(false);
+        }
+        else if (playerHP <= 4 && HP5.activeSelf)
+        {
+            HP5.SetActive(false);
+        }
+
+        if (ScoreShow.IsActive())
+        {
+            ScoreShow.text = $"Score : {Score}";
+        }
+
+
         if (gameOver && !completeGameOver) 
         {
             completeGameOver = true;
@@ -62,12 +103,14 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
+        StatusBar.SetActive(false);
         Time.timeScale = 0f;
         pauseUI.SetActive(true);
     }
 
     public void ResumeGame()
     {
+        StatusBar.SetActive(true);
         Time.timeScale = 1f;
         pauseUI.SetActive(false);
     }
@@ -75,6 +118,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver() 
     {
+        StatusBar.SetActive(false);
         ScoreEnd.text = $"Your Score : {Score} ";
 
         Time.timeScale = 0f;
