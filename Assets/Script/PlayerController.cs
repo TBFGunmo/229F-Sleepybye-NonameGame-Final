@@ -53,6 +53,21 @@ public class PlayerController : MonoBehaviour
         {
             onFloor = true;
         }
+
+        if (collision.gameObject.CompareTag("Bomb")) 
+        {
+            GameManager.playerHP -= 1;
+            print(GameManager.playerHP);
+
+            if (GameManager.playerHP <= 0) 
+            {
+                GameManager.gameOver = true;
+            }
+
+            Destroy(collision.gameObject);
+
+        }
+
     }
 
     private void OnCollisionStay2D(Collision2D collision)

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5449446979659242665}
   - component: {fileID: 6899479678078360211}
   - component: {fileID: 2128166942374277937}
+  - component: {fileID: -4035147682435826059}
   m_Layer: 0
   m_Name: Coconut
   m_TagString: Fruit
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.3735848, g: 0.27906123, b: 0.15718755, a: 1}
@@ -169,4 +170,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f37a3ba3dd8e54db0f4b69b2a37c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitMove
-  speed: 2
+  speed: 4
+--- !u!114 &-4035147682435826059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3480831198694454779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e25d6949777ee47b51a14698982652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Fruit
+  Score: 8

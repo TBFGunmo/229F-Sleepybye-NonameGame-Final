@@ -13,15 +13,16 @@ public class SpawnFruit : MonoBehaviour
     //public bool endGame = false;
     
     private float currentTime = 0;
-    private float delaySpawn = 4;
+    private float delaySpawn = 2;
 
     private Coroutine fruitSpawnRoutine;
 
 
-    public bool activeGun1 = false;
-    public bool activeGun2 = false;
-    public bool activeGun3 = false;
-    public bool activeGun4 = false;
+    public Cannon activeGun1 ;
+    public Cannon activeGun2 ;
+    public Cannon activeGun3 ;
+    public Cannon activeGun4 ;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -63,25 +64,25 @@ public class SpawnFruit : MonoBehaviour
                 yield return new WaitForSeconds(delaySpawn);
                 currentTime += delaySpawn;
 
-                if (currentTime >= 30)
+                if (currentTime >= 40)
+                {
+                    delaySpawn = 0.5f;
+                    activeGun4.sendActive = true;
+                }
+                else if (currentTime >= 30)
                 {
                     delaySpawn = 1;
-                    activeGun4 = true;
-                }
-                else if (currentTime >= 25)
-                {
-                    delaySpawn = 2;
-                    activeGun3 = true;
+                    activeGun3.sendActive = true;
                 }
                 else if (currentTime >= 20)
                 {
                     delaySpawn = 2;
-                    activeGun2 = true;
+                    activeGun2.sendActive = true;
                 }
                 else if (currentTime >= 10)
                 {
-                    delaySpawn = 3;
-                    activeGun1 = true;
+                    delaySpawn = 2.5f;
+                    activeGun1.sendActive = true;
                 }
             }
             yield return null;

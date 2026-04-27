@@ -7,10 +7,17 @@ public class GameManager : MonoBehaviour
     public static bool gameOver = false;
 
 
+    public static int playerHP = 5;
+
+
+    public static int Score = 0;
+
+
 
     private void Awake()
     {
         instance = this;
+        Score = 0;
     }
 
     void Start()

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3679902783005567090}
   - component: {fileID: -423285907554005961}
   - component: {fileID: 2408969644507432208}
+  - component: {fileID: -7516116877579413154}
   m_Layer: 0
   m_Name: Melon
   m_TagString: Fruit
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.6568774, g: 0.86415094, b: 0.5983838, a: 1}
@@ -169,4 +170,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f37a3ba3dd8e54db0f4b69b2a37c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitMove
-  speed: 2
+  speed: 4
+--- !u!114 &-7516116877579413154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8489401246432308275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e25d6949777ee47b51a14698982652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Fruit
+  Score: 5
