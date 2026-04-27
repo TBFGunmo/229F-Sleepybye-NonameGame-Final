@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
     public GameObject HP2;
     public GameObject HP1;
 
+    public GameObject tutorialUI;
+
 
 
 
@@ -51,6 +53,10 @@ public class GameManager : MonoBehaviour
         pauseUI.SetActive(false);
         GameOverUI.SetActive(false);
         CreditUI.SetActive(false);
+        StatusBar.SetActive(false);
+
+        Time.timeScale = 0f;
+        tutorialUI.SetActive(true);
 
     }
 
@@ -99,6 +105,14 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
 
+    }
+
+
+    public void StartGame()
+    {
+        StatusBar.SetActive(true);
+        Time.timeScale = 1f;
+        tutorialUI.SetActive(false);
     }
 
     public void PauseGame()
