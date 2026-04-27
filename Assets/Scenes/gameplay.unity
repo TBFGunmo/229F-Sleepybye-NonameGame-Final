@@ -1613,11 +1613,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnFruit
   fruitPrefabs:
-  - {fileID: 8376999186486647794, guid: 0e312ee5fdb48314aa441ad0fdd72613, type: 3}
-  - {fileID: 1120772794588767824, guid: bffd6accc29eeec40b6627f45acd8490, type: 3}
-  - {fileID: 7375399691595663655, guid: fc9bedc5276d0ae4e93e900bdb78a5ac, type: 3}
-  - {fileID: 8489401246432308275, guid: 66aa8230774bed24abc89f7e8ca52eb7, type: 3}
-  - {fileID: 3480831198694454779, guid: ab6edd6c1e100c342bd606616fe67bad, type: 3}
+  - {fileID: 853489264829713324, guid: e535d973b4d35da4493491f60daa0189, type: 3}
+  - {fileID: 7978477002217717700, guid: b92e2c81af0be6e4ab93ab9d8a60e459, type: 3}
+  - {fileID: 7742183147862897576, guid: c774763a193e4444fb4257ce20c8a904, type: 3}
+  - {fileID: 8415383112988562068, guid: a9085f3a2b1fea349a65dddfb39d7e6a, type: 3}
+  - {fileID: 3510470098569872856, guid: 72d571cd08617d84e86bbd9abebb92e8, type: 3}
   spawnLevel: {fileID: 480329381}
   spawnXStart: {fileID: 126689799}
   spawnXEnd: {fileID: 425727174}
