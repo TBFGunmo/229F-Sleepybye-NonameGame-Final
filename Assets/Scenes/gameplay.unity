@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 30783287}
   m_Layer: 0
   m_Name: Place (1)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1125,7 +1125,7 @@ GameObject:
   - component: {fileID: 177381942}
   m_Layer: 0
   m_Name: Place
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3417,7 +3417,7 @@ GameObject:
   - component: {fileID: 898095476}
   m_Layer: 0
   m_Name: Place (2)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6319,7 +6319,7 @@ GameObject:
   - component: {fileID: 1766673317}
   m_Layer: 0
   m_Name: Place (5)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7521,7 +7521,7 @@ GameObject:
   - component: {fileID: 2057424771}
   m_Layer: 0
   m_Name: Place (3)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
