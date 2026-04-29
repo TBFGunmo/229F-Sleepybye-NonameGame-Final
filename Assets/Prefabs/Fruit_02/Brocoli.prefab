@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 197888296649584461}
   - component: {fileID: 2447954359567954158}
   - component: {fileID: 6232290199770426479}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Brocoli
   m_TagString: Fruit
   m_Icon: {fileID: 0}
