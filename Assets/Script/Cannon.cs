@@ -86,15 +86,16 @@ public class Cannon : MonoBehaviour
         float gravity = Mathf.Abs(Physics2D.gravity.y);
 
         float displacementY = end.y - start.y;
-        Vector2 displacementX = new Vector2(end.x - start.x, 0);
+        float displacementX = end.x - start.x;
 
-        float time = Mathf.Sqrt(2 * height / gravity) +
-                     Mathf.Sqrt(2 * (displacementY - height) / gravity * -1);
+        float time = Mathf.Sqrt(2 * height / gravity) + Mathf.Sqrt(2 * (displacementY - height) / gravity * -1);
 
-        float velocityY = Mathf.Sqrt(2 * gravity * height);
-        Vector2 velocityX = displacementX / time;
+        //float velocityY = Mathf.Sqrt(2 * gravity * height);
+        float velocityY = (displacementY / time) + (0.5f * Mathf.Abs(Physics2D.gravity.y) * time);
+        float velocityX = displacementX / time;
 
-        return velocityX + Vector2.up * velocityY;
+        //return velocityX + Vector2.up * velocityY;
+        return new Vector2(velocityX, velocityY);
     }
 
     private void Shoot() 
