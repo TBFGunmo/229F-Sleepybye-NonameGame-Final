@@ -23,6 +23,9 @@ public class Cannon : MonoBehaviour
 
     public float angleCal = 1;
 
+    public AudioClip ShootSound;
+    public AudioSource AudioSource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -74,6 +77,7 @@ public class Cannon : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, targetAngle + angleCal);
 
         Shoot();
+        AudioSource.PlayOneShot(ShootSound, 0.5f);
     }
 
     public void getPoint() 

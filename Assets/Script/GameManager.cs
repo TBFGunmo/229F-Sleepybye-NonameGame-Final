@@ -37,7 +37,8 @@ public class GameManager : MonoBehaviour
 
 
 
-
+    public AudioClip EndSound;
+    public AudioSource AudioSource;
 
 
 
@@ -132,6 +133,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver() 
     {
+        AudioSource.PlayOneShot(EndSound, 0.5f);
         StatusBar.SetActive(false);
         ScoreEnd.text = $"Your Score : {Score} ";
 
